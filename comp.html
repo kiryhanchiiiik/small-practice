@@ -31,27 +31,35 @@
         fill: red;
       }
       .heart {
+        width: 60px;
+        height: 60px;
         position: absolute;
-        left: -2px;
-        top: 55px;
+        left: -13px;
+        top: 50px;
         transform: rotate(-35deg);
       }
       .heart-2 {
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 55px;
-        right: 2px;
+        top: 50px;
+        right: -13px;
         transform: rotate(35deg);
       }
       .heart-3 {
+        width: 60px;
+        height: 60px;
         position: absolute;
-        bottom: -1px;
-        left: 2px;
+        bottom: -10px;
+        left: -5px;
         transform: rotate(220deg);
       }
       .heart-4 {
+        width: 60px;
+        height: 60px;
         position: absolute;
-        bottom: 2px;
-        right: 1px;
+        bottom: -10px;
+        right: -5px;
         transform: rotate(132deg);
       }
       h1 {
@@ -70,18 +78,12 @@
   <body>
     <div class="container">
       <h1 class="title">Подарок - сообщение!</h1>
-      <svg class="heart-initial heart" width="30" height="30">
-        <use href="./heart.svg#heart"></use>
-      </svg>
-      <svg class="heart-initial heart-2" width="30" height="30">
-        <use href="./heart.svg#heart"></use>
-      </svg>
-      <svg class="heart-initial heart-3" width="30" height="30">
-        <use href="./heart.svg#heart"></use>
-      </svg>
-      <svg class="heart-initial heart-4" width="30" height="30">
-        <use href="./heart.svg#heart"></use>
-      </svg>
+
+      <img class="heart" src="./heart.png" alt="" />
+      <img class="heart-2" src="./heart.png" alt="" />
+      <img class="heart-3" src="./heart.png" alt="" />
+      <img class="heart-4" src="./heart.png" alt="" />
+
       <p>
         Дорогая Сонечка, Софийок, Соняшник, хочу тебе сказать в 10000001 раз,
         что ты просто лучшая! Ты супер красивая, умнейшая, сообразительная,
