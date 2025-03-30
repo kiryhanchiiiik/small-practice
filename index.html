@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Love Story</title>
+  </head>
+  <body>
+    <div class="container" id="intro">
+      <h1>Готовы ли вы пройти соцопрос? 🤔</h1>
+      <button class="btn start" onclick="startSurvey()">Начать</button>
+    </div>
+
+    <div class="container question" id="survey">
+      <h1>Вы любите Кирилла? ❤️</h1>
+      <div class="btn-container">
+        <button class="btn-choose yes" onclick="openModal()">Да</button>
+        <button class="btn-choose no" onmouseover="moveButton(this)">
+          Нет
+        </button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <h2>Я знал! 😍</h2>
+      <a href="comp.html">Получить подарок</a>
+    </div>
+
+    <script>
+      function startSurvey() {
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("survey").style.display = "block";
+      }
+
+      function openModal() {
+        document.getElementById("modal").style.display = "block";
+      }
+
+      function moveButton(button) {
+        let x = Math.random() * (window.innerWidth - 100);
+        let y = Math.random() * (window.innerHeight - 50);
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+      }
+    </script>
+  </body>
+</html>
